@@ -1,12 +1,12 @@
 # A Series Of Correlated Events
-### Serial Correlation and Autoregressive Models
+### Analyzing Financial Time Series With Autoregressive Models
 
 <br>
 
 <p align="left">
-  <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/panic.png", width="400">
+  <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/panic.jpg", width="400">
   <br>
-  <i> Still life with basket by Paul Cezanne (1890) </i>
+  <i> A crowd forms outside a Wall Street bank during the Panic of 1907. Photo from [New York Public Library](https://digitalcollections.nypl.org/items/510d47dd-5b2c-a3d9-e040-e00a18064a99) </i>
 </p>
 
 <!--
