@@ -1,6 +1,8 @@
 # A Series Of Correlated Events
 ### Serial Correlation and Autoregressive Models
 
+<br>
+
 <p align="left">
   <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/panic.png", width="400">
   <br>
