@@ -2,7 +2,7 @@
 ## Serial Correlation and Autoregressive Models
 
 <p align="left">
-  <img src="https://raw.githubusercontent.com/tommyzakhoo/epicurious/master/painting.jpg", width="400">
+  <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/panic.png", width="400">
   <br>
   <i> Still life with basket by Paul Cezanne (1890) </i>
 </p>
