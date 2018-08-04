@@ -9,6 +9,20 @@
   <i> A crowd forms outside a Wall Street bank during the Panic of 1907. Photo from <a href="https://digitalcollections.nypl.org/items/510d47dd-5b2c-a3d9-e040-e00a18064a99">New York Public Library</a>. </i>
 </p>
 
+## Status
+Work in progress. Last update: 4 August 2018.
+
+
+### Table of contents
+
+- [Motivation And Project Description](#motivation-and-project-description)
+- [Cleaning The Data](#cleaning-the-data)
+- [Data Exploration](#data-exploration)
+
+## Motivation And Project Description
+
+
+
 <!--
 
 ```python
