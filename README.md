@@ -1,5 +1,5 @@
 # A Series Of Correlated Events
-## Serial Correlation and Autoregressive Models
+### Serial Correlation and Autoregressive Models
 
 <p align="left">
   <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/panic.png", width="400">
