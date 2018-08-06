@@ -1,5 +1,5 @@
 # A Series Of Correlated Events
-### Analyzing Financial Time Series With Autoregressive Models
+### Analyzing Economics and Financial Time Series With Autoregressive Models
 
 <br>
 
