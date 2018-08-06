@@ -10,17 +10,19 @@
 </p>
 
 ## Status
-Work in progress. Last update: 4 August 2018.
+Work in progress. Last update: 6 August 2018.
 
 
 ### Table of contents
 
 - [Motivation And Project Description](#motivation-and-project-description)
-- [Cleaning The Data](#cleaning-the-data)
-- [Data Exploration](#data-exploration)
+- [Introduction to Time Series Analysis](#introduction-to-time-series-analysis)
 
 ## Motivation And Project Description
 
+## Introduction to Time Series Analysis
+
+I am going to start by giving some very basic examples of time series analysis and autoregressive models. For a more in-depth and mathematical introduction, I highly recommend "<b> Time Series Analysis: Forecasting and Control, 5th Edition </b>" by George E. P. Box, Gwilym M. Jenkins, Gregory C. Reinsel, and Greta M. Ljung.
 
 
 <!--
