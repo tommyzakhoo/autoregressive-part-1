@@ -26,9 +26,9 @@ Work in progress. Last update: 6 August 2018.
 I am going to start by giving some very basic examples of time series analysis and autoregressive models, using the so-called "Box–Jenkins method". For a more in-depth and mathematical introduction, I highly recommend "<b> Time Series Analysis: Forecasting and Control, 5th Edition </b>" by George E. P. Box and Gwilym M. Jenkins et al.
 
 
-## Real World Dataset 1 - Virtual Currency
+## Dataset 1 - Virtual Currency
 
-## Real World Dataset 2 - Housing Construction Price
+## Dataset 2 - Housing Construction Price
 
 
 <!--
