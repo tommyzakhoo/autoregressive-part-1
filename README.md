@@ -1,5 +1,5 @@
 # A Series Of Correlated Events
-### Analyzing Economics and Financial Time Series With Autoregressive Models
+### Analyzing Economics Time Series With Autoregressive Models
 
 <br>
 
@@ -12,7 +12,6 @@
 ## Status
 Work in progress. Last update: 6 August 2018.
 
-
 ### Table of contents
 
 - [Motivation And Project Description](#motivation-and-project-description)
@@ -20,9 +19,16 @@ Work in progress. Last update: 6 August 2018.
 
 ## Motivation And Project Description
 
+
+
 ## Introduction to Time Series Analysis
 
-I am going to start by giving some very basic examples of time series analysis and autoregressive models. For a more in-depth and mathematical introduction, I highly recommend "<b> Time Series Analysis: Forecasting and Control, 5th Edition </b>" by George E. P. Box, Gwilym M. Jenkins, Gregory C. Reinsel, and Greta M. Ljung.
+I am going to start by giving some very basic examples of time series analysis and autoregressive models, using the so-called "Box–Jenkins method". For a more in-depth and mathematical introduction, I highly recommend "<b> Time Series Analysis: Forecasting and Control, 5th Edition </b>" by George E. P. Box and Gwilym M. Jenkins et al.
+
+
+## Real World Dataset 1 - Virtual Currency
+
+## Real World Dataset 2 - Housing Construction Price
 
 
 <!--
