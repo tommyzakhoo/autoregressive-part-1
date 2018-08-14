@@ -31,7 +31,7 @@ I will start by giving some a basic example of an autoregressive model. Then pro
 Our simple autoregressive model is,
 
 <p align="left">
-  <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/example_series.gif">
+  <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/example.gif">
 </p>
 
 
