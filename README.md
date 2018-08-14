@@ -6,7 +6,7 @@
 <p align="left">
   <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/panic.jpg", width="300">
   <br>
-  <i> A crowd forms outside a Wall Street bank during the Panic of 1907. Our understanding of economics and financial mathematics has advanced quite a bit since then. Photo from <a href="https://digitalcollections.nypl.org/items/510d47dd-5b2c-a3d9-e040-e00a18064a99">New York Public Library</a>. </i>
+  <i> A crowd forms outside a Wall Street bank during the Panic of 1907. Photo from <a href="https://digitalcollections.nypl.org/items/510d47dd-5b2c-a3d9-e040-e00a18064a99">New York Public Library</a>. </i>
 </p>
 
 ## Status
