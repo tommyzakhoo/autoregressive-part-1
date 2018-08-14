@@ -19,15 +19,22 @@ Work in progress. Last update: 14 August 2018.
 
 ## Motivation And Project Description
 
-I was briefly exposed to the analysis of time series during an undergraduate class in Econometrics. I recently had the opportunity to take a data science challenge
+I was briefly exposed to the analysis of time series during an undergraduate class in Econometrics. I recently had the opportunity to take a data science challenge involving an autoregressive model, which piqued my interest in the topic once again.
+
+In this project, I will generate a toy dataset to illustrate the so-called "Box–Jenkins method". Then, I will 
 
 
 ## Introduction to Time Series Analysis
 
-I am going to start by giving some very basic examples of time series analysis and autoregressive models, using the so-called "Box–Jenkins method". For a more in-depth and mathematical introduction, I highly recommend "<b> Time Series Analysis: Forecasting and Control, 5th Edition </b>" by George E. P. Box and Gwilym M. Jenkins et al.
+I will start by giving some a basic example of an autoregressive model. Then proceed to analyze data generated from it using the Box–Jenkins method. For a more in-depth and mathematical introduction, I highly recommend "<b> Time Series Analysis: Forecasting and Control, 5th Edition </b>" by George E. P. Box and Gwilym M. Jenkins et al.
+
+Our simple autoregressive model is,
+
 
 
 ## Dataset 1 - Virtual Currency
+
+The market for virtual goods is a challenging but exciting frontier for modern economics.
 
 ## Dataset 2 - Housing Construction Price
 
