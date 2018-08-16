@@ -27,13 +27,16 @@ The writing here will be terse. For a more in-depth and mathematical introductio
 
 ## Introduction to Time Series Analysis
 
-In this section, I have generated a set of data from a simple toy autoregressive model,
+In this section, I have generated a set of data from a simple toy autoregressive model defined by the equation below.
 
 <p align="left">
   <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/example_ar3.gif">
 </p>
 
-The data consists of 
+In our model, time t is discrete. The variable X at time t depends on its value at time t-1, t-2 and t-3, plus an error term epsilon that is drawn from the standard normal distribution. The first three values of X at time t = 1,2,3 are set to zero. 
+
+consisting of 30,000 data points in Python and
+
 
 ## Dataset 1 - Virtual Currency
 
