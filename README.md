@@ -10,7 +10,7 @@
 </p>
 
 ## Status
-Work in progress. Last update: 14 August 2018.
+Work in progress. Last update: 18 August 2018.
 
 ### Table of contents
 
@@ -19,9 +19,11 @@ Work in progress. Last update: 14 August 2018.
 
 ## Motivation And Project Description
 
-I was briefly exposed to the analysis of time series during an undergraduate class in Econometrics. I recently had the opportunity to take a data science challenge involving an autoregressive model, which piqued my interest in the topic once again.
+I was briefly exposed to time series analysis during an undergraduate econometrics class. I recently took a data science challenge that requires fitting an autoregressive model, which piqued my interest in the topic once again.
 
-In this project, I will generate a toy dataset to illustrate the so-called "Box–Jenkins method". Then, I will apply the same method to model two real world dataset.
+In this project, I will be applying the so-called "Box–Jenkins method" to two real world datasets. 
+
+I will generate a toy dataset to illustrate the so-called "Box–Jenkins method". Then, I will apply the same method to model two real world dataset.
 
 The writing here will be terse. For a more in-depth and mathematical introduction, I highly recommend "<b> Time Series Analysis: Forecasting and Control, 5th Edition </b>" by George E. P. Box and Gwilym M. Jenkins et al.
 
