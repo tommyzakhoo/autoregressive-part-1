@@ -21,31 +21,26 @@ Work in progress. Last update: 18 August 2018.
 
 I was briefly exposed to time series analysis during an undergraduate econometrics class. I recently took a data science challenge that requires fitting an autoregressive model, which piqued my interest in the topic once again.
 
-In this project, I will be applying the so-called "Box–Jenkins method" to two real world datasets. 
+In this project, I will be applying the so-called "Box–Jenkins method" to two real world datasets. Before that, I will briefly decribe the method with an artificial toy dataset.
 
-I will briefly decribe the method. For a more in-depth and mathematical introduction, I highly recommend "<i> Time Series Analysis: Forecasting and Control, 5th Edition </i>" by George E. P. Box and Gwilym M. Jenkins et al.
-
-Alternatively, Wikipedia has a nice summary of the method with references. [(link to Wikipedia article)](https://en.wikipedia.org/wiki/Box%E2%80%93Jenkins_method)
-
-I will generate a toy dataset to illustrate the so-called "Box–Jenkins method". Then, I will apply the same method to model two real world dataset.
-
-The writing here will be terse. For a more in-depth and mathematical introduction, I highly recommend "<b> Time Series Analysis: Forecasting and Control, 5th Edition </b>" by George E. P. Box and Gwilym M. Jenkins et al.
+For a more in-depth and mathematical introduction, I highly recommend "<i> Time Series Analysis: Forecasting and Control, 5th Edition </i>" by George E. P. Box and Gwilym M. Jenkins et al. Alternatively, Wikipedia has a nice summary of the method with references. [(link to Wikipedia article)](https://en.wikipedia.org/wiki/Box%E2%80%93Jenkins_method)
 
 ## Introduction to Time Series Analysis
 
-In this section, I have generated a set of data from a simple toy autoregressive model defined by the equation below. The Python code to do this is simple and can be found here: [generate_data.py](generate_data.py).
+In this section, I will generate a set of data from a simple toy autoregressive model, defined by the equation shown below. The Python code to do this is simple and can be found here: [generate_data.py](generate_data.py).
 
 <p align="left">
   <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/example_ar3.gif">
 </p>
 
-In our model, time t is discrete. The variable X at time t depends on its value at time t-1, t-2 and t-3, plus an error term epsilon that is drawn from the standard normal distribution. The first three values of X at time t = 1,2,3 are set to zero. 
+In this model, time t is discrete. The variable X at time t are positively related to its value at time t-1, t-2 and t-3 (these are known as lagged variables), plus an error term epsilon that is drawn from a standard normal distribution. The first three values of X at time t = 1,2,3 are initialized to zero. 
 
-consisting of 30,000 data points in Python and
+The toy data consists of values for 30,000 time steps, the first 200 time steps is illustrated below using the Matplotlib package. Due to the positive relationship to previous values, a positive (negative) value of X tend to be followed by a positive (negative) one, until a big enough error comes by the break the trend. This give rise to the interesting "cyclic" pattern in the figure.
 
 <p align="left">
   <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/fig1.png", height="300">
 </p>
+
 
 
 ## Dataset 1 - Virtual Currency
