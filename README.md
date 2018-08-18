@@ -23,7 +23,7 @@ I was briefly exposed to time series analysis during an undergraduate econometri
 
 In this project, I will be applying the so-called "Box–Jenkins method" to two real world datasets. 
 
-I will briefly decribe the method. For a more in-depth and mathematical introduction, I highly recommend "<b> Time Series Analysis: Forecasting and Control, 5th Edition </b>" by George E. P. Box and Gwilym M. Jenkins et al.
+I will briefly decribe the method. For a more in-depth and mathematical introduction, I highly recommend "<i> Time Series Analysis: Forecasting and Control, 5th Edition </i>" by George E. P. Box and Gwilym M. Jenkins et al.
 
 Alternatively, Wikipedia has a nice summary of the method with references. [(link to Wikipedia article)](https://en.wikipedia.org/wiki/Box%E2%80%93Jenkins_method)
 
