@@ -25,10 +25,7 @@ In this project, I will be applying the so-called "Box–Jenkins method" to two 
 
 I will briefly decribe the method. For a more in-depth and mathematical introduction, I highly recommend "<b> Time Series Analysis: Forecasting and Control, 5th Edition </b>" by George E. P. Box and Gwilym M. Jenkins et al.
 
-Alternatively, Wikipedia has a nice summary of the method with references. [Link to Wikipedia article.](https://en.wikipedia.org/wiki/Box%E2%80%93Jenkins_method
-)
-
-https://en.wikipedia.org/wiki/Box%E2%80%93Jenkins_method
+Alternatively, Wikipedia has a nice summary of the method with references. [(link to Wikipedia article)](https://en.wikipedia.org/wiki/Box%E2%80%93Jenkins_method)
 
 I will generate a toy dataset to illustrate the so-called "Box–Jenkins method". Then, I will apply the same method to model two real world dataset.
 
