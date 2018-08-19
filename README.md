@@ -72,17 +72,21 @@ Finally, I use statsmodel again to fit an autoregressive model to the data. Code
   <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/coeffs.png", height="300">
 </p>
 
-The fitted coefficients are 
+The list above shows the fitted cofficients for the first 10 lagged terms. The first three are almost equal to the 0.40, 0.20 and 0.10 in the toy model that the data was generated from. Due to the randomness in the data, 
 
 <p align="left">
   <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/pvalues.png", height="300">
 </p>
 
+Above shows the p-values for each of the fitted coefficients, which have the [Student's t-distribution](https://en.wikipedia.org/wiki/Student%27s_t-distribution). The first three are p-values are tiny and statistically significant
+
+While this was a straightforward exercise, it is nice to see how everything works under ideal conditions, and that our code actually works!
+
 ## Virtual Currency Dataset
 
 The market for virtual goods is a challenging but exciting frontier for modern economics. For me, oe of the most interesting intersection between virtual goods and economics happened when the online game "Eve Online" hired an economist, Dr Eyjolfur Gudmundsson, as their chief economist and head of analytics.
 
-So of course, I went out and collected time series data on the price of the game's virtual currency, "PLEX". The data consists of the number of orders in the market, quantity of PLEX sold, lowest buy price, highest sell price, and daily average price. There are 5010 data points, ranging from 1 April 2016 to 13 July 2018. The full set of data can be found here: 
+So of course, I went out and collected time series data on the price of the game's virtual currency, "PLEX". The data consists of the number of orders in the market, quantity of PLEX sold, lowest buy price, highest sell price, and daily average price. There are 5010 data points, ranging from 1 April 2016 to 13 July 2018. The full set of data can be found here: [full_PLEX_data.xlsx](full_PLEX_data.xlsx)
 
 ## Construction Price Dataset
 
