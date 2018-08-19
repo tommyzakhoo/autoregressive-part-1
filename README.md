@@ -66,7 +66,11 @@ The autocorrelation plot shows the correlation between X and lagged/past values 
 
 The partial autocorrelation plot also shows the correlation between X and lagged values of itself, <b>after</b> removing the effects of correlations with all earlier lagged values. That is, the correlation between X and a lagged value of itself that is not accounted for by earlier lags. Mathematical resuls says that for an autoregressive model, this plot would be zero from some point onwards. This is what we see in the figure: only the first four terms are significantly different from zero at a 99% level of confidence, which matches up exactly with how we specified our model.
 
-Finally, I use statsmodel again to fit an autoregressive model to the data.
+Finally, I use statsmodel again to fit an autoregressive model to the data. Code for this can be found here: 
+
+<p align="left">
+  <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/fig3.png", height="300">
+</p>
 
 ## Virtual Currency Dataset
 
