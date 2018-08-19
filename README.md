@@ -54,6 +54,13 @@ As for our toy model, a mathematical result tells us that we can check for stati
 
 The next step in the Box-Jenkins method is to look at the autocorrelation and partial autocorrelation functions. I did this using the [statsmodel package](https://www.statsmodels.org/stable/index.html), and the output are shown in the figures below.
 
+<p align="left">
+  <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/fig2.png", height="300">
+</p>
+
+<p align="left">
+  <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/fig3.png", height="300">
+</p>
 
 ## Virtual Currency Dataset
 
