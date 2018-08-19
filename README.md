@@ -52,15 +52,21 @@ An important assumption of our analysis is [stationarity](https://en.wikipedia.o
 
 As for our toy model, a mathematical result tells us that we can check for stationarity by writing down an associated polynomial equation, and checking that all of its (possibly complex) roots are outside the unit circle. Again, I will skip the details, but Wikipedia has a nice  [summary with references](https://en.wikipedia.org/wiki/Autoregressive_model#Definition). If you do this for our toy model, you will see that all of its roots are indeed outside the unit circle.
 
-The next step in the Box-Jenkins method is to look at the autocorrelation and partial autocorrelation functions. I did this using the [statsmodel package](https://www.statsmodels.org/stable/index.html), and the output are shown in the figures below.
+The next step in the Box-Jenkins method is to select a model by looking at the autocorrelation and partial autocorrelation functions. I did this using the [statsmodel package](https://www.statsmodels.org/stable/index.html) and the output, along with 99% confidence regions in blue, are shown below. The Python code is very simple and can be found here: [plot_data.py](plot_data.py). In this case, I already know what the underlying model is, but it is still interesting to see how the behavior of these functions agree with mathematical predictions.
 
 <p align="left">
   <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/fig2.png", height="300">
 </p>
 
+The autocorrelation plot shows the correlation between X and lagged/past values of itself. Mathematical results says that this should decrease exponentially for an autoregressive model, which fits what we see in the figure.
+
 <p align="left">
   <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/fig3.png", height="300">
 </p>
+
+The partial autocorrelation plot also shows the correlation between X and lagged values of itself, <b>after</b> removing the effects of correlations with all earlier lagged values. That is, the correlation between X and a lagged value of itself that is not accounted for by earlier lags. Mathematical resuls says that for an autoregressive model, this plot would be zero from some point onwards. This is what we see in the figure: only the first four terms are significantly different from zero at a 99% level of confidence, which matches up exactly with how we specified our model.
+
+Finally, I use statsmodel again to fit an autoregressive model to the data.
 
 ## Virtual Currency Dataset
 
