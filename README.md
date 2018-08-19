@@ -41,7 +41,9 @@ The toy data consists of values for 30,000 time steps, the first 200 time steps 
   <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/fig1.png", height="300">
 </p>
 
+An important assumption of our analysis is [stationarity](https://en.wikipedia.org/wiki/Stationary_process), which means that the mean and the variance of X does not depend on time t.
 
+https://en.wikipedia.org/wiki/Stationary_process
 
 ## Dataset 1 - Virtual Currency
 
