@@ -41,9 +41,11 @@ The toy data consists of values for 30,000 time steps, the first 200 time steps 
   <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/fig1.png", height="300">
 </p>
 
-An important assumption of our analysis is [stationarity](https://en.wikipedia.org/wiki/Stationary_process), which means that the mean and the variance of X does not depend on time t.
+An important assumption of our analysis is [stationarity](https://en.wikipedia.org/wiki/Stationary_process), which means that the mean and the variance of X does not depend on time t. That is, the mean and variance remains constant over time. Stationarity is strong assumption that is often not met by real data. However, as we will see later, there are ways to transform data into a stationary one. 
 
-https://en.wikipedia.org/wiki/Stationary_process
+As for our toy model, a mathematical result tells us that we can check for stationarity by writing down an associated polynomial equation, and checking that all of its (possibly complex) roots are outside the unit circle. Again, I will skip the details, but Wikipedia has a nice  [summary with references](https://en.wikipedia.org/wiki/Autoregressive_model#Definition). If you do this for our toy model, you will see that all of its roots are indeed outside the unit circle.
+
+The next step in the Box-Jenkins method involves
 
 ## Dataset 1 - Virtual Currency
 
