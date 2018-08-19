@@ -69,12 +69,14 @@ The partial autocorrelation plot also shows the correlation between X and lagged
 Finally, I use statsmodel again to fit an autoregressive model to the data. Code for this can be found here: 
 
 <p align="left">
-  <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/fig3.png", height="300">
+  <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/coeff.png", height="300">
 </p>
 
 ## Virtual Currency Dataset
 
-The market for virtual goods is a challenging but exciting frontier for modern economics.
+The market for virtual goods is a challenging but exciting frontier for modern economics. For me, oe of the most interesting intersection between virtual goods and economics happened when the online game "Eve Online" hired an economist, Dr Eyjolfur Gudmundsson, as their chief economist and head of analytics.
+
+So of course, I went out and collected time series data on the price of the game's virtual currency, "PLEX".
 
 ## Construction Price Dataset
 
