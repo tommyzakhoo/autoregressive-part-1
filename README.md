@@ -1,9 +1,6 @@
 # A Series Of Correlated Events
 ### Analyzing Economics Time Series With Autoregressive Models
 
-header('Cache-Control: no-cache');
-header('Expires: ' . gmdate('D, d M Y H:i:s \G\M\T', time() - 36000));
-
 <br>
 
 <p align="left">
