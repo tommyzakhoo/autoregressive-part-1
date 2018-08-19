@@ -1,6 +1,8 @@
 # A Series Of Correlated Events
 ### Analyzing Economics Time Series With Autoregressive Models
 
+curl -X PURGE {https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/fig2.png}
+
 <br>
 
 <p align="left">
