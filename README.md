@@ -14,8 +14,15 @@ Work in progress. Last update: 18 August 2018.
 
 ### Table of contents
 
+- [Tools and Techniques](#tools-and-techniques)
 - [Motivation And Project Description](#motivation-and-project-description)
 - [Introduction to Time Series Analysis](#introduction-to-time-series-analysis)
+- [Virtual Currency Dataset](#virtual-currency-dataset)
+- [Construction Price Dataset](#construction-price-dataset)
+
+## Tools and Techniques
+
+Python, Matplotlib, Statsmodel, Time Series Analysis, Autoregressive Model
 
 ## Motivation And Project Description
 
@@ -35,7 +42,7 @@ In this section, I will generate a set of data from a simple toy autoregressive 
 
 In this model, time t is discrete. The variable X at time t are positively related to its value at time t-1, t-2 and t-3 (these are known as lagged variables), plus an error term epsilon that is drawn from a standard normal distribution. The first three values of X at time t = 1,2,3 are initialized to zero. 
 
-The toy data consists of values for 30,000 time steps, the first 200 time steps is illustrated below using the Matplotlib package. Due to the positive relationship to previous values, a positive (negative) value of X tend to be followed by a positive (negative) one, until a big enough error comes by the break the trend. This give rise to the interesting "cyclic" pattern in the figure.
+The toy data consists of values for 30,000 time steps, the first 200 time steps is illustrated below using the [Matplotlib package](https://matplotlib.org/). Due to the positive relationship to previous values, a positive (negative) value of X tend to be followed by a positive (negative) one, until a big enough error comes by the break the trend. This give rise to the interesting "cyclic" pattern in the figure.
 
 <p align="left">
   <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/fig1.png", height="300">
@@ -45,13 +52,14 @@ An important assumption of our analysis is [stationarity](https://en.wikipedia.o
 
 As for our toy model, a mathematical result tells us that we can check for stationarity by writing down an associated polynomial equation, and checking that all of its (possibly complex) roots are outside the unit circle. Again, I will skip the details, but Wikipedia has a nice  [summary with references](https://en.wikipedia.org/wiki/Autoregressive_model#Definition). If you do this for our toy model, you will see that all of its roots are indeed outside the unit circle.
 
-The next step in the Box-Jenkins method involves
+The next step in the Box-Jenkins method is to look at the autocorrelation and partial autocorrelation functions. I did this using the [statsmodel package](https://www.statsmodels.org/stable/index.html), and the output are shown in the figures below.
 
-## Dataset 1 - Virtual Currency
+
+## Virtual Currency Dataset
 
 The market for virtual goods is a challenging but exciting frontier for modern economics.
 
-## Dataset 2 - Housing Construction Price
+## Construction Price Dataset
 
 
 <!--
