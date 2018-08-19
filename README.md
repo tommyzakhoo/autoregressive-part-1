@@ -66,17 +66,21 @@ The autocorrelation plot shows the correlation between X and lagged/past values 
 
 The partial autocorrelation plot also shows the correlation between X and lagged values of itself, <b>after</b> removing the effects of correlations with all earlier lagged values. That is, the correlation between X and a lagged value of itself that is not accounted for by earlier lags. Mathematical resuls says that for an autoregressive model, this plot would be zero from some point onwards. This is what we see in the figure: only the first four terms are significantly different from zero at a 99% level of confidence, which matches up exactly with how we specified our model.
 
-Finally, I use statsmodel again to fit an autoregressive model to the data. Code for this can be found here: 
+Finally, I use statsmodel again to fit an autoregressive model to the data. Code for this can be found here: [fit_data.py](plot_data.py)
 
 <p align="left">
-  <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/coeff.png", height="300">
+  <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/coeffs.png", height="300">
+</p>
+
+<p align="left">
+  <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/pvalues.png", height="300">
 </p>
 
 ## Virtual Currency Dataset
 
 The market for virtual goods is a challenging but exciting frontier for modern economics. For me, oe of the most interesting intersection between virtual goods and economics happened when the online game "Eve Online" hired an economist, Dr Eyjolfur Gudmundsson, as their chief economist and head of analytics.
 
-So of course, I went out and collected time series data on the price of the game's virtual currency, "PLEX".
+So of course, I went out and collected time series data on the price of the game's virtual currency, "PLEX". The data consists of the number of orders in the market, quantity of PLEX sold, lowest buy price, highest sell price, and daily average price. There are 5010 data points, ranging from 1 April 2016 to 13 July 2018. The full set of data can be found here: 
 
 ## Construction Price Dataset
 
