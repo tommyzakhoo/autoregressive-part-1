@@ -86,7 +86,11 @@ While this was a straightforward exercise, it is nice to see how everything work
 
 The market for virtual goods is a challenging but exciting frontier for modern economics. For me, oe of the most interesting intersection between virtual goods and economics happened when the online game "Eve Online" hired an economist, Dr Eyjolfur Gudmundsson, as their chief economist and head of analytics.
 
-So of course, I went out and collected time series data on the price of the game's virtual currency, "PLEX". The data consists of the number of orders in the market, quantity of PLEX sold, lowest buy price, highest sell price, and daily average price. There are 5010 data points, ranging from 1 April 2016 to 13 July 2018. The full set of data can be found here: [full_PLEX_data.xlsx](full_PLEX_data.xlsx)
+So of course, I went out and collected time series data on the price of the game's virtual currency, "PLEX". This currency is sold by the game company for real world money and is used for various profit generating in-game microtransactions. Note that the "price" here is the price of this virtual currency in terms of a resource (ISK) that is found within the game. This resource can only be obtained by playing the game and cannot be bought with real world money.
+
+The data consists of the number of orders in the market, quantity of PLEX sold, lowest buy price, highest sell price, and daily average price. There are 5010 data points, ranging from 1 April 2016 to 13 July 2018. The full set of data can be found here: [full_PLEX_data.xlsx](full_PLEX_data.xlsx)
+
+I extracted the price column into a .csv file and flipped it so that time t = 1 is 1 April 2016. A quick look at the plot
 
 ## Construction Price Dataset
 
