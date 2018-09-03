@@ -1,5 +1,5 @@
 # A Series Of Correlated Events - Part 1
-### Intr nalyzing Economics Time Series With Autoregressive Models
+### An Introduction to Analyzing Time Series With Autoregressive Models
 
 <br>
 
@@ -10,29 +10,30 @@
 </p>
 
 ## Status
-Work in progress. Last update: 3 September 2018.
+Completed on 3 September 2018.
 
 ### Table of contents
 
-- [Tools and Techniques](#tools-and-techniques)
+- [Tools, Techniques and Concepts](#tools-techniques-and-concepts)
 - [Motivation And Project Description](#motivation-and-project-description)
-- [Introduction to Time Series Analysis](#introduction-to-time-series-analysis)
-- [Virtual Currency Dataset](#virtual-currency-dataset)
-- [Construction Price Dataset](#construction-price-dataset)
+- [Autoregressive Model and Stationarity](#autoregressive-model-and-stationarity)
+- [The Autocorrelation and Partial Autocorrelation Function](#the-autocorrelation-and-partial-autocorrelation-function)
+- [Fitting an Autoregressive Model to Data](fitting-an-autoregressive-model-to-data)
+- [Summary and Final Thoughts](#summary-and-final-thoughts)
 
-## Tools and Techniques
+## Tools, Techniques and Concepts
 
-Python, Matplotlib, Statsmodel, Time Series Analysis, Autoregressive Model
+Python, Matplotlib, Statsmodel, Time Series Analysis, Stationarity, Box-Jenkins Method, Autoregressive Model, Auto-correlation, Partial auto-correlation
 
 ## Motivation And Project Description
 
 I was briefly exposed to time series analysis during an undergraduate econometrics class. I recently took a data science challenge that requires fitting an autoregressive model, which piqued my interest in the topic once again.
 
-In this project, I will be applying the so-called "Box–Jenkins method" to two real world datasets. Before that, I will briefly decribe the method with an artificial toy dataset.
+In the second part of this project, I will be applying the so-called "Box–Jenkins method" to two real world datasets. Before that, I will briefly describe the method here, using an artificially generated toy dataset for illustration.
 
 For a more in-depth and mathematical introduction, I highly recommend "<i> Time Series Analysis: Forecasting and Control, 5th Edition </i>" by George E. P. Box and Gwilym M. Jenkins et al. Alternatively, Wikipedia has a nice summary of the method with references. [(link to Wikipedia article)](https://en.wikipedia.org/wiki/Box%E2%80%93Jenkins_method)
 
-## Introduction to Time Series Analysis
+## Autoregressive Model and Stationarity
 
 In this section, I will generate a set of data from a simple toy autoregressive model, defined by the equation shown below. The Python code to do this is simple and can be found here: [generate_data.py](generate_data.py).
 
@@ -52,6 +53,8 @@ An important assumption of our analysis is [stationarity](https://en.wikipedia.o
 
 As for our toy model, a mathematical result tells us that we can check for stationarity by writing down an associated polynomial equation, and checking that all of its (possibly complex) roots are outside the unit circle. Again, I will skip the details, but Wikipedia has a nice  [summary with references](https://en.wikipedia.org/wiki/Autoregressive_model#Definition). If you do this for our toy model, you will see that all of its roots are indeed outside the unit circle.
 
+## The Autocorrelation and Partial Autocorrelation Function
+
 The next step in the Box-Jenkins method is to select a model by looking at the autocorrelation and partial autocorrelation functions. I did this using the [statsmodel package](https://www.statsmodels.org/stable/index.html) and the output, along with 99% confidence regions in blue, are shown below. The Python code is very simple and can be found here: [plot_data.py](plot_data.py). In this case, I already know what the underlying model is, but it is still interesting to see how the behavior of these functions agree with mathematical predictions.
 
 <p align="left">
@@ -66,13 +69,15 @@ The autocorrelation plot shows the correlation between X and lagged/past values 
 
 The partial autocorrelation plot also shows the correlation between X and lagged values of itself, <b>after</b> removing the effects of correlations with all earlier lagged values. That is, the correlation between X and a lagged value of itself that is not accounted for by earlier lags. Mathematical resuls says that for an autoregressive model, this plot would be zero from some point onwards. This is what we see in the figure: only the first four terms are significantly different from zero at a 99% level of confidence, which matches up exactly with how we specified our model.
 
+## Fitting an Autoregressive Model to Data
+
 Finally, I use statsmodel again to fit an autoregressive model to the data. Code for this can be found here: [fit_data.py](fit_data.py)
 
 <p align="left">
   <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/coeffs.png", height="300">
 </p>
 
-The list above shows the fitted cofficients for the first 10 lagged terms. The first three are almost equal to the 0.40, 0.20 and 0.10 in the toy model that the data was generated from. Due to the randomness in the data, 
+The list above shows the fitted coefficients for the first 10 lagged terms. The first three are almost equal to the 0.40, 0.20 and 0.10 in the toy model that the data was generated from. Due to the randomness in the data, 
 
 <p align="left">
   <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/pvalues.png", height="300">
@@ -80,68 +85,13 @@ The list above shows the fitted cofficients for the first 10 lagged terms. The f
 
 Above shows the p-values for each of the fitted coefficients, which have the [Student's t-distribution](https://en.wikipedia.org/wiki/Student%27s_t-distribution). The first three are p-values are tiny and statistically significant
 
+## Summary and Final Thoughts
+
+I gave an introduction to time series analysis here by doing the following.
+
+- 
+-
+-
+
 While this was a straightforward exercise, it is nice to see how everything works under ideal conditions, and that our code actually works!
 
-## Virtual Currency Dataset
-
-The market for virtual goods is a challenging but exciting frontier for modern economics. For me, oe of the most interesting intersection between virtual goods and economics happened when the online game "Eve Online" hired an economist, Dr Eyjolfur Gudmundsson, as their chief economist and head of analytics.
-
-So of course, I went out and collected time series data on the price of the game's virtual currency, "PLEX". This currency is sold by the game company for real world money and is used for various profit generating in-game microtransactions. Note that the "price" here is the price of this virtual currency in terms of a resource (ISK) that is found within the game. This resource can only be obtained by playing the game and cannot be bought with real world money.
-
-The data consists of the number of orders in the market, quantity of PLEX sold, lowest buy price, highest sell price, and daily average price. There are 5010 data points, ranging from 1 April 2016 to 13 July 2018. The full set of data can be found here: [full_PLEX_data.xlsx](full_PLEX_data.xlsx)
-
-I extracted the price column into a .csv file and flipped it so that time t = 1 is 1 April 2016. A quick look at the plot
-
-## Construction Price Dataset
-
-
-<!--
-
-```python
-s = "Python syntax highlighting"
-print s
-```
-
-This project is a part of the [Data Science Working Group](http://datascience.codeforsanfrancisco.org) at [Code for San Francisco](http://www.codeforsanfrancisco.org).  Other DSWG projects can be found at the [main GitHub repo](https://github.com/sfbrigade/data-science-wg).
-
-#### -- Project Status: [Active, On-Hold, Completed]
-
-## Project Intro/Objective
-The purpose of this project is ________. (Describe the main goals of the project and potential civic impact. Limit to a short paragraph, 3-6 Sentences)
-
-### Partner
-* [Name of Partner organization/Government department etc..]
-* Website for partner
-* Partner contact: [Name of Contact], [slack handle of contact if any]
-* If you do not have a partner leave this section out
-
-### Methods Used
-* Inferential Statistics
-* Machine Learning
-* Data Visualization
-* Predictive Modeling
-* etc.
-
-### Technologies
-* R 
-* Python
-* D3
-* PostGres, MySql
-* Pandas, jupyter
-* HTML
-* JavaScript
-* etc. 
-
-## Project Description
-(Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
-
-## Needs of this project
-
-- frontend developers
-- data exploration/descriptive statistics
-- data processing/cleaning
-- statistical modeling
-- writeup/reporting
-- etc. (be as specific as possible)
-
--->
