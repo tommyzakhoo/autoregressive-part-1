@@ -1,5 +1,5 @@
-# A Series Of Correlated Events
-### Analyzing Economics Time Series With Autoregressive Models
+# A Series Of Correlated Events - Part 1
+### Intr nalyzing Economics Time Series With Autoregressive Models
 
 <br>
 
@@ -10,7 +10,7 @@
 </p>
 
 ## Status
-Work in progress. Last update: 18 August 2018.
+Work in progress. Last update: 3 September 2018.
 
 ### Table of contents
 
