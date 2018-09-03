@@ -18,12 +18,12 @@ Completed on 3 September 2018.
 - [Motivation And Project Description](#motivation-and-project-description)
 - [Autoregressive Model and Stationarity](#autoregressive-model-and-stationarity)
 - [The Autocorrelation and Partial Autocorrelation Function](#the-autocorrelation-and-partial-autocorrelation-function)
-- [Fitting an Autoregressive Model to Data](fitting-an-autoregressive-model-to-data)
+- [Fitting an Autoregressive Model to Data](#fitting-an-autoregressive-model-to-data)
 - [Summary and Final Thoughts](#summary-and-final-thoughts)
 
 ## Tools, Techniques and Concepts
 
-Python, Matplotlib, Statsmodel, Time Series Analysis, Stationarity, Box-Jenkins Method, Autoregressive Model, Auto-correlation, Partial auto-correlation
+Python, Matplotlib, Statsmodel, Time Series Analysis, Stationarity, Box-Jenkins Method, Autoregressive Model, Auto-correlation, Partial auto-correlation, Student's t distribution, p-values, statistical significance
 
 ## Motivation And Project Description
 
@@ -83,11 +83,13 @@ The list above shows the fitted coefficients for the first 10 lagged terms. The 
   <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/pvalues.png", height="300">
 </p>
 
-Above shows the p-values for each of the fitted coefficients, which have the [Student's t-distribution](https://en.wikipedia.org/wiki/Student%27s_t-distribution). The first three are p-values are tiny and statistically significant
+Above shows the p-values for each of the fitted coefficients, which have the [Student's t-distribution](https://en.wikipedia.org/wiki/Student%27s_t-distribution).
+
+The first three are p-values are tiny and definitely statistically significant at very high levels of significance. For example, I would keep the first three coefficients and reject the rest, at the 99.99% significance level. If I did so, I would have pretty much recovered the model that the data was generated with!
 
 ## Summary and Final Thoughts
 
-I gave an introduction to time series analysis here by doing the following.
+In part 2, I will analyze two real world economics dataset with time series analysis. In this part, I did the following to give an introduction to time series analysis.
 
 - 
 -
