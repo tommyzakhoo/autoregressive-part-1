@@ -1,5 +1,5 @@
 # A Series Of Correlated Events - Part 1
-### An Introduction to Analyzing Time Series With Autoregressive Models
+### An Introduction to Time Series Analysis and Fitting Autoregressive Models
 
 <br>
 
