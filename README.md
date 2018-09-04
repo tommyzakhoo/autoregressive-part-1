@@ -93,9 +93,10 @@ In part 2, I will analyze a virtual currency time series dataset. In this initia
 
 A short summary of what I have done here is as follows.
 
-- 
--
--
+- Generated data from an autoregressive model
+- Visualize the data and checked for stationarity.
+- Plotted the autocorrelation and partial autocorrelation function.
+- Fitted an autoregressive model to the data, recovering the original model that generated the data.
 
 While this was a straightforward exercise, it is nice to see how everything works under ideal conditions, and that our code actually works!
 
