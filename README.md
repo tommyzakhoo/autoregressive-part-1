@@ -10,7 +10,7 @@
 </p>
 
 ## Status
-Completed on 3 September 2018.
+Work in process. Last update: 3 September 2018.
 
 ### Table of contents
 
