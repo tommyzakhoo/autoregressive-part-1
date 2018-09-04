@@ -89,7 +89,9 @@ The first three are p-values are tiny and definitely statistically significant a
 
 ## Summary and Final Thoughts
 
-In part 2, I will analyze two real world economics dataset with time series analysis. In this part, I did the following to give an introduction to time series analysis.
+In part 2, I will analyze a vritual currency time series dataset. In this part, I gave an basic introduction to time series analysis using the Box-Jenkins method, and fitting an autoregressive model to data.
+
+A short summary of what I have done here is as follows.
 
 - 
 -
