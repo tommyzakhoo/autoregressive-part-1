@@ -29,7 +29,7 @@ Python, Matplotlib, Statsmodel, Time Series Analysis, Stationarity, Box-Jenkins 
 
 I was briefly exposed to time series analysis during an undergraduate econometrics class. I recently took a data science challenge that requires fitting an autoregressive model, which piqued my interest in the topic once again.
 
-In the second part of this project, I will be applying the so-called "Box–Jenkins method" to two real world datasets. Before that, I will briefly describe the method here, using an artificially generated toy dataset for illustration.
+In the second part of this project, I will be applying the so-called "Box–Jenkins method" to a set of virtual currency time series data. Before that, I will briefly describe the method here, using an artificially generated toy dataset for illustration.
 
 For a more in-depth and mathematical introduction, I highly recommend "<i> Time Series Analysis: Forecasting and Control, 5th Edition </i>" by George E. P. Box and Gwilym M. Jenkins et al. Alternatively, Wikipedia has a nice summary of the method with references. [(link to Wikipedia article)](https://en.wikipedia.org/wiki/Box%E2%80%93Jenkins_method)
 
@@ -49,9 +49,9 @@ The toy data consists of values for 30,000 time steps, the first 200 time steps 
   <img src="https://raw.githubusercontent.com/tommyzakhoo/autoregressive/master/fig1.png", height="300">
 </p>
 
-An important assumption of our analysis is [stationarity](https://en.wikipedia.org/wiki/Stationary_process), which means that the mean and the variance of X does not depend on time t. That is, the mean and variance remains constant over time. Stationarity is strong assumption that is often not met by real data. However, as we will see later, there are ways to transform data into a stationary one. 
+An important assumption of our analysis is [stationarity](https://en.wikipedia.org/wiki/Stationary_process), which means that the mean and the variance of X remains constant, and does not depend on time t. Stationarity is strong assumption that is often not met by real data. However, as we will see later, there are ways to possibly transform data into a stationary one. 
 
-As for our toy model, a mathematical result tells us that we can check for stationarity by writing down an associated polynomial equation, and checking that all of its (possibly complex) roots are outside the unit circle. Again, I will skip the details, but Wikipedia has a nice  [summary with references](https://en.wikipedia.org/wiki/Autoregressive_model#Definition). If you do this for our toy model, you will see that all of its roots are indeed outside the unit circle.
+As for our toy model, a mathematical result says that I can check for stationarity by writing down an associated polynomial equation, and checking that all of its (possibly complex) roots are outside the unit circle. Again, I will skip the details, but Wikipedia has a nice  [summary with references](https://en.wikipedia.org/wiki/Autoregressive_model#Definition). I did this for my toy model, and saw that all of its roots are indeed outside the unit circle.
 
 ## The Autocorrelation and Partial Autocorrelation Function
 
