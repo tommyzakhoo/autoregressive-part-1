@@ -23,7 +23,7 @@ Work in process. Last update: 3 September 2018.
 
 ## Tools, Techniques and Concepts
 
-Python, Matplotlib, Statsmodel, Time Series Analysis, Stationarity, Box-Jenkins Method, Autoregressive Model, Auto-correlation, Partial auto-correlation, Student's t distribution, p-values, statistical significance
+Python, Matplotlib, Statsmodel, Time Series Analysis, Stationarity, Box-Jenkins Method, Autoregressive Model, Auto-correlation, Partial auto-correlation, p-values, statistical significance
 
 ## Motivation And Project Description
 
