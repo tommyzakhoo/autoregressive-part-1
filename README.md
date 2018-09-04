@@ -85,11 +85,11 @@ The list above shows the fitted coefficients for the first 10 lagged terms. The 
 
 Above shows the p-values for each of the fitted coefficients, which have the [Student's t-distribution](https://en.wikipedia.org/wiki/Student%27s_t-distribution).
 
-The first three are p-values are tiny and definitely statistically significant at very high levels of significance. For example, I would keep the first three coefficients and reject the rest, at the 99.99% significance level. If I did so, I would have pretty much recovered the model that the data was generated with!
+The first three are p-values are tiny, and definitely statistically significant at very high levels of significance. For example, I would keep the first three coefficients and reject the rest, at the 99.99% level of significance. If I did so, I would have pretty much recovered the model that the data was generated with!
 
 ## Summary and Final Thoughts
 
-In part 2, I will analyze a vritual currency time series dataset. In this part, I gave an basic introduction to time series analysis using the Box-Jenkins method, and fitting an autoregressive model to data.
+In part 2, I will analyze a virtual currency time series dataset. In this initial part, I gave an basic introduction to time series analysis, using the Box-Jenkins method, and show how to fit an autoregressive model to data.
 
 A short summary of what I have done here is as follows.
 
