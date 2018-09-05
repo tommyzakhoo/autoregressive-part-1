@@ -85,7 +85,7 @@ The list above shows the fitted coefficients for the first 10 lagged terms. The 
 
 Above shows the p-values for each of the fitted coefficients, which have the [Student's t-distribution](https://en.wikipedia.org/wiki/Student%27s_t-distribution).
 
-The first three are p-values are tiny, and definitely statistically significant at very high levels of significance. For example, I would keep the first three coefficients and reject the rest, at the 99.99% level of significance. If I did so, I would have pretty much recovered the model that the data was generated with!
+The first three are p-values are tiny, and definitely statistically significant at very low high levels of significance. For example, I would keep the first three coefficients and reject the rest, at the 0.1% level of significance. If I did so, I would have pretty much recovered the model that the data was generated with!
 
 ## Summary and Final Thoughts
 
